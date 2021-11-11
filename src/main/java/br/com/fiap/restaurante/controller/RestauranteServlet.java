@@ -5,17 +5,17 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
+import br.com.fiap.restaurante.bean.Restaurante;
 import br.com.fiap.restaurante.dao.RestauranteDAO;
+import br.com.fiap.restaurante.exception.DBException;
 import br.com.fiap.restaurante.factory.DAOFactory;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import br.com.fiap.restaurante.bean.Restaurante;
-import br.com.fiap.restaurante.exception.DBException;
 
-	
+
 @WebServlet("/restaurante")
 public class RestauranteServlet extends HttpServlet {
 
